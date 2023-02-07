@@ -559,6 +559,22 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -569,12 +585,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .ml-1 {
   margin-left: 0.25rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
 }
 
 .mt-6 {
@@ -601,12 +621,20 @@ video {
   margin-top: 0.5rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[22\.5px\] {
@@ -633,16 +661,57 @@ video {
   height: 305px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[450px\] {
+  height: 450px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-\[145px\] {
@@ -667,6 +736,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -793,6 +866,11 @@ video {
   background-color: rgb(2 52 35 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -846,6 +924,10 @@ video {
   padding-right: 1.75rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -853,6 +935,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl {
@@ -870,14 +957,24 @@ video {
   line-height: 2.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -924,11 +1021,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-VariableItalic';
+  font-family: "Satoshi-VariableItalic";
 
-  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
-       url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+        url("../fonts/Satoshi-VariableItalic.woff") format("woff"),
+        url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
 
   font-weight: 300 900;
 
@@ -938,11 +1035,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-Light';
+  font-family: "Satoshi-Light";
 
-  src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
-       url('../fonts/Satoshi-Light.woff') format('woff'),
-       url('../fonts/Satoshi-Light.ttf') format('truetype');
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"),
+        url("../fonts/Satoshi-Light.woff") format("woff"),
+        url("../fonts/Satoshi-Light.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -952,11 +1049,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-LightItalic';
+  font-family: "Satoshi-LightItalic";
 
-  src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-LightItalic.woff') format('woff'),
-       url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"),
+        url("../fonts/Satoshi-LightItalic.woff") format("woff"),
+        url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -966,11 +1063,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-Regular';
+  font-family: "Satoshi-Regular";
 
-  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('../fonts/Satoshi-Regular.woff') format('woff'),
-       url('../fonts/Satoshi-Regular.ttf') format('truetype');
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+        url("../fonts/Satoshi-Regular.woff") format("woff"),
+        url("../fonts/Satoshi-Regular.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -980,11 +1077,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-Italic';
+  font-family: "Satoshi-Italic";
 
-  src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
-       url('../fonts/Satoshi-Italic.woff') format('woff'),
-       url('../fonts/Satoshi-Italic.ttf') format('truetype');
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"),
+        url("../fonts/Satoshi-Italic.woff") format("woff"),
+        url("../fonts/Satoshi-Italic.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -994,11 +1091,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-Medium';
+  font-family: "Satoshi-Medium";
 
-  src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('../fonts/Satoshi-Medium.woff') format('woff'),
-       url('../fonts/Satoshi-Medium.ttf') format('truetype');
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+        url("../fonts/Satoshi-Medium.woff") format("woff"),
+        url("../fonts/Satoshi-Medium.ttf") format("truetype");
 
   font-weight: 500;
 
@@ -1008,11 +1105,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-MediumItalic';
+  font-family: "Satoshi-MediumItalic";
 
-  src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
-       url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+        url("../fonts/Satoshi-MediumItalic.woff") format("woff"),
+        url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
 
   font-weight: 500;
 
@@ -1022,11 +1119,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
 
-  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('../fonts/Satoshi-Bold.woff') format('woff'),
-       url('../fonts/Satoshi-Bold.ttf') format('truetype');
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+        url("../fonts/Satoshi-Bold.woff") format("woff"),
+        url("../fonts/Satoshi-Bold.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -1036,11 +1133,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-BoldItalic';
+  font-family: "Satoshi-BoldItalic";
 
-  src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
-       url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Satoshi-BoldItalic.woff") format("woff"),
+        url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -1050,11 +1147,11 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-Black';
+  font-family: "Satoshi-Black";
 
-  src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
-       url('../fonts/Satoshi-Black.woff') format('woff'),
-       url('../fonts/Satoshi-Black.ttf') format('truetype');
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"),
+        url("../fonts/Satoshi-Black.woff") format("woff"),
+        url("../fonts/Satoshi-Black.ttf") format("truetype");
 
   font-weight: 900;
 
@@ -1064,17 +1161,39 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi-BlackItalic';
+  font-family: "Satoshi-BlackItalic";
 
-  src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
-       url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+        url("../fonts/Satoshi-BlackItalic.woff") format("woff"),
+        url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
 
   font-weight: 900;
 
   font-display: swap;
 
   font-style: italic;
+}
+
+/* hamburger-line */
+
+.hamburger-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  height: 2px;
+  width: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.hamburger-line-middle {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  height: 2px;
+  width: 25px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .placeholder\:text-sm::-moz-placeholder {
@@ -1085,11 +1204,6 @@ video {
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.hover\:bg-primary-2:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 187 161 / var(--tw-bg-opacity));
 }
 
 .hover\:opacity-50:hover {
@@ -1134,14 +1248,72 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
-}
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+}

@@ -11,7 +11,7 @@
 
 <body>
 
-    <head>
+    <header>
         <!-- topnav start -->
         <div class="mx-auto bg-primary-1">
             <div class="container flex justify-between text-white text-sm py-3">
@@ -19,7 +19,7 @@
                     <img class="" src="/dist/img/call.svg" alt="">
                     <p>087889094948</p>
                 </div>
-                <p>Dapatkan Promo Beli 3 Gratis 1</p>
+                <p class="hidden md:visible" id="top-nav-p" name="top-nav-p">Dapatkan Promo Beli 3 Gratis 1</p>
                 <div class="flex gap-2 item-center">
                     <img src="dist/img/location.svg" alt="">
                     <p>Jakarta, Indonesia</p>
@@ -29,58 +29,78 @@
         <!-- topnav end -->
 
         <!-- navbar start -->
-        <nav class="py-7 ">
-            <div class=" container flex justify-between text-primary-1">
-                <div class="flex items-center">
-                    <a href="#">
-                        <div class="flex">
+        <nav class="py-7 w-full z-10">
+            <div class="container">
+                <div class="flex items-center text-primary-1 relative lg:justify-between">
+                    <div>
+                        <a href="#" class="flex">
                             <img class="h-[22.5px] w-auto" src="dist/img/keranjang.svg" alt="">
-                            <h2>Toko<span class="text-primary-1 font-bold">Fashion</span></h2>
-                        </div>
-                    </a>
-                    <ul class="flex gap-10 ml-20 font-semibold">
-                        <li class="group">
-                            <a href="#" class="group-hover:text-primary-2">Home</a>
-                        </li>
-                        <li class=" gap-2 items-center group">
-                            <button href="#" class="group-hover:text-primary-2 flex items-center">Kategori <svg
-                                    class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg></button>
+                            <h2 class="text-xl
+                            ">Toko<span class="text-primary-1 font-bold">Fashion</span></h2>
+                        </a>
+                    </div>
 
-                        </li>
-                        <li class="group">
-                            <a href="#" class="group-hover:text-primary-2">Promo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex gap-2">
-                    <button class="button-style text-primary-1 hover:opacity-50 hover:shadow-sm"> <a href="#">Login</a>
-                    </button>
-                    <button class="button-style bg-primary-1 text-white  hover:opacity-50 hover:shadow-sm"> <a
-                            href="#">Daftar</a> </button>
+                    <!-- hamburger menu start -->
+                    <div class="flex items-center">
+                        <button id="hamburger-menu" name="hamburger-menu" type="button" class="lg:hidden block absolute
+                            right-4">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line-middle"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                    <!-- hamburger menu end -->
+
+                    <div id="nav-menu" class=" hidden lg:flex items-center lg:justify-between">
+                        <div class="ml-10">
+                            <ul class="flex gap-10 font-semibold">
+                                <li class="group">
+                                    <a href="#" class="group-hover:text-primary-2">Home</a>
+                                </li>
+                                <li class=" gap-2 items-center group">
+                                    <button href="#" class="group-hover:text-primary-2 flex items-center">Kategori <svg
+                                            class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+
+                                </li>
+                                <li class="group">
+                                    <a href="#" class="group-hover:text-primary-2">Promo</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="ml-16 gap-2">
+                            <button class="button-style text-primary-1 hover:opacity-50 hover:shadow-sm"> <a
+                                    href="#">Login</a>
+                            </button>
+                            <button class="button-style bg-primary-1 text-white  hover:opacity-50 hover:shadow-sm">
+                                <a href="#">Daftar</a> </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
         <!-- navbar end -->
-    </head>
+    </header>
 
     <!-- hero section start -->
-    <section class="bg-primary-2 w-full h-[560px]">
+    <section class="bg-primary-2 w-full h-auto">
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="self-center lg:w-1/2">
-                    <h3 class="text-2xl">Diskon <span class="font-semibold">30%</span> Hari ini</h3>
-                    <h2 class="text-7xl text-primary-1 font-bold">Promo 2023 Jacket Collection</h2>
+            <div class="flex flex-wrap pt-6 ">
+                <div class="self-center lg:w-1/2 ">
+                    <h3 class="text-xl md:text-2xl">Diskon <span class="font-semibold">30%</span> Hari ini</h3>
+                    <h2 class="text-5xl md:text-7xl text-primary-1 font-bold">Promo 2023 Jacket Collection</h2>
                     <button
-                        class="border mt-6 bg-white py-4 px-9  font-semibold rounded-lg hover:opacity-70 hover:shadow-md">Beli
+                        class="border mt-6 bg-white text-sm md:text-xl py-2 px-4 md:py-4 md:px-9  font-semibold rounded-lg hover:opacity-70 hover:shadow-md">Beli
                         Sekarang</button>
                 </div>
-                <div class="w-full self-end lg:w-1/2 ">
-                    <img class="max-w-full mx-auto" src="dist/img/hero.png" alt="">
+                <div class="w-full lg:w-1/2 ">
+                    <img class=h-[400px] w-auto lg:h-full lg:w-full " src=" dist/img/hero.png" alt="">
                 </div>
             </div>
         </div>
@@ -90,6 +110,7 @@
     <!-- kategori section start -->
     <section class="mt-20">
         <div class="container grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
+
             <div class="bg-primary-2 grid grid-cols-2 p-4 rounded-lg ">
                 <div class="self-center">
                     <p class="text-white">Diskon 10%</p>
@@ -227,26 +248,26 @@
             </div>
 
             <div class="grid grid-cols-2 gap-6 mt-16">
-                <div class="bg-[#F5F5F5] flex py-6 px-7 rounded-sm justify-between">
-                    <h3 class="text-xl">Bagaimana Cara Memesan ?</h3>
+                <div class="bg-[#F5F5F5] flex py-3 px-4 md:py-6 md:px-7 rounded-sm justify-between">
+                    <h3 class="text-base md:text-xl">Bagaimana Cara Memesan ?</h3>
                     <button class="">
                         <img src="dist/img/chevron-down.svg" alt="">
                     </button>
                 </div>
-                <div class="bg-[#F5F5F5] flex py-6 px-7 rounded-sm justify-between">
-                    <h3 class="text-xl">Berapa Ongkirnya ?</h3>
+                <div class="bg-[#F5F5F5] flex py-3 px-4 md:py-6 md:px-7 rounded-sm justify-between">
+                    <h3 class="text-base md:text-xl">Berapa Ongkirnya ?</h3>
                     <button class="">
                         <img src="dist/img/chevron-down.svg" alt="">
                     </button>
                 </div>
-                <div class="bg-[#F5F5F5] flex py-6 px-7 rounded-sm justify-between">
-                    <h3 class="text-xl">Bagaimana Caranya Pengembalian Barang?</h3>
+                <div class="bg-[#F5F5F5] flex py-3 px-4 md:py-6 md:px-7 rounded-sm justify-between">
+                    <h3 class="text-base md:text-xl">Bagaimana Caranya Pengembalian Barang?</h3>
                     <button class="">
                         <img src="dist/img/chevron-down.svg" alt="">
                     </button>
                 </div>
-                <div class="bg-[#F5F5F5] flex py-6 px-7 rounded-sm justify-between">
-                    <h3 class="text-xl">Bagamana Cara Menggunakan Diskon ?</h3>
+                <div class="bg-[#F5F5F5] flex py-3 px-4 md:py-6 md:px-7 rounded-sm justify-between">
+                    <h3 class="text-base md:text-xl">Bagamana Cara Menggunakan Diskon ?</h3>
                     <button class="">
                         <img src="dist/img/chevron-down.svg" alt="">
                     </button>
@@ -282,7 +303,8 @@
     <!-- Footer end -->
 
 
-
+    <!-- javascript -->
+    <script src="dist/js/script.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,8 @@ module.exports = {
         'primary-3' : '#D9D9D9',
         'secondary-1' : '#EDEDED',
         'secondary-2' : '#023423',
-        'secondary-3' : '#787878'
+        'secondary-3' : '#787878',
+        dark: '#0f172a',
       }
     },
   },
